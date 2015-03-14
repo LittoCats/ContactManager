@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A13EA6191AB28F5700DB44EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA6181AB28F5700DB44EA /* AppDelegate.swift */; };
-		A13EA61B1AB28F5700DB44EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA61A1AB28F5700DB44EA /* ViewController.swift */; };
 		A13EA61D1AB28F5700DB44EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A13EA61C1AB28F5700DB44EA /* Images.xcassets */; };
 		A13EA6201AB28F5700DB44EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13EA61E1AB28F5700DB44EA /* LaunchScreen.xib */; };
 		A13EA62C1AB28F5700DB44EA /* ContactManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA62B1AB28F5700DB44EA /* ContactManagerTests.swift */; };
+		A13EA6391AB292A400DB44EA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA6371AB292A400DB44EA /* TableViewController.swift */; };
+		A13EA63A1AB292A400DB44EA /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A13EA6381AB292A400DB44EA /* TableViewController.xib */; };
+		A13EA63C1AB292E800DB44EA /* ContactManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13EA63B1AB292E800DB44EA /* ContactManager.swift */; };
+		A1AD168F1AB2E6DC00D9D696 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AD168E1AB2E6DC00D9D696 /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +31,15 @@
 		A13EA6131AB28F5700DB44EA /* ContactManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13EA6171AB28F5700DB44EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13EA6181AB28F5700DB44EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A13EA61A1AB28F5700DB44EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A13EA61C1AB28F5700DB44EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A13EA61F1AB28F5700DB44EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A13EA6251AB28F5700DB44EA /* ContactManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13EA62A1AB28F5700DB44EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A13EA62B1AB28F5700DB44EA /* ContactManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactManagerTests.swift; sourceTree = "<group>"; };
+		A13EA6371AB292A400DB44EA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A13EA6381AB292A400DB44EA /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		A13EA63B1AB292E800DB44EA /* ContactManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactManager.swift; sourceTree = "<group>"; };
+		A1AD168E1AB2E6DC00D9D696 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AD168F1AB2E6DC00D9D696 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +64,7 @@
 		A13EA60A1AB28F5700DB44EA = {
 			isa = PBXGroup;
 			children = (
+				A1AD168E1AB2E6DC00D9D696 /* AddressBook.framework */,
 				A13EA6151AB28F5700DB44EA /* ContactManager */,
 				A13EA6281AB28F5700DB44EA /* ContactManagerTests */,
 				A13EA6141AB28F5700DB44EA /* Products */,
@@ -76,10 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				A13EA6181AB28F5700DB44EA /* AppDelegate.swift */,
-				A13EA61A1AB28F5700DB44EA /* ViewController.swift */,
 				A13EA61C1AB28F5700DB44EA /* Images.xcassets */,
 				A13EA61E1AB28F5700DB44EA /* LaunchScreen.xib */,
+				A13EA6371AB292A400DB44EA /* TableViewController.swift */,
+				A13EA6381AB292A400DB44EA /* TableViewController.xib */,
 				A13EA6161AB28F5700DB44EA /* Supporting Files */,
+				A13EA63B1AB292E800DB44EA /* ContactManager.swift */,
 			);
 			path = ContactManager;
 			sourceTree = "<group>";
@@ -189,6 +199,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13EA63A1AB292A400DB44EA /* TableViewController.xib in Resources */,
 				A13EA6201AB28F5700DB44EA /* LaunchScreen.xib in Resources */,
 				A13EA61D1AB28F5700DB44EA /* Images.xcassets in Resources */,
 			);
@@ -208,8 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13EA61B1AB28F5700DB44EA /* ViewController.swift in Sources */,
 				A13EA6191AB28F5700DB44EA /* AppDelegate.swift in Sources */,
+				A13EA63C1AB292E800DB44EA /* ContactManager.swift in Sources */,
+				A13EA6391AB292A400DB44EA /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,9 +338,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ContactManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -336,6 +350,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ContactManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -395,6 +410,7 @@
 				A13EA6311AB28F5700DB44EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A13EA6321AB28F5700DB44EA /* Build configuration list for PBXNativeTarget "ContactManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +419,7 @@
 				A13EA6341AB28F5700DB44EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
